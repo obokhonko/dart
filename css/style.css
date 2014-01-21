@@ -1,0 +1,265 @@
+BODY {
+    padding-bottom: 50px;
+
+    background: #000;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+A:link,
+A:visited {
+    color: #FFF;
+    }
+
+A:hover,
+A:active {
+    text-decoration: none;
+    }
+
+H1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    }
+
+H2 {
+    font-size: 31px;
+    font-weight: normal;
+    line-height: 36px;
+    text-transform: uppercase;
+    }
+
+H3 {
+    font-size: 24px;
+    font-weight: normal;
+    }
+
+P {
+    font-size: 13px;
+    line-height: 20px;
+    }
+
+HEADER {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    }
+
+.top-panel,
+SECTION {
+    margin: 0 auto;
+
+    width: 848px;
+    }
+
+.top-panel {
+    position: relative;
+
+    background-color: #222;
+    height: 37px;
+    }
+
+.top-panel::before,
+.top-panel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    border-width: 37px 18px;
+    border-color: #222 transparent;
+    }
+
+.top-panel::before {
+    left: 0;
+    margin-left: -18px;
+
+    border-style: solid none none solid;
+    }
+
+.top-panel::after {
+    right: 0;
+    margin-right: -18px;
+
+    border-style: solid solid none none;
+    }
+
+LABEL {
+    position: relative;
+    padding-left: 25px;
+
+    display: inline-block;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    }
+
+LABEL::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+
+    border: 4px solid #eee;
+    border-radius: 13px;
+    background-color: #D1CDCD;
+    -webkit-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .3),
+    0 1px 0 0 rgba(255, 255, 255, .8);
+    -moz-box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .3),
+    0 1px 0 0 rgba(255, 255, 255, .8);
+    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, .3),
+    0 1px 0 0 rgba(255, 255, 255, .8);
+
+    }
+
+INPUT[type="radio"] {
+    padding: 0;
+
+    display: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+INPUT[type="radio"]:checked + LABEL:before {
+    content: "";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    background: #00a4e4;
+    text-align: center;
+    line-height: 15px;
+    }
+
+.top-panel > A {
+    margin: 0 46px;
+    padding: 11px 0;
+
+    display: inline-block;
+    }
+
+.main-area {
+    padding-top: 90px;
+    }
+
+.main-area > IMG {
+    margin: 0 auto;
+
+    display: block;
+    }
+
+.main-info > H1 {
+    margin-top: 50px;
+
+    text-align: center;
+    }
+
+.info-text {
+    font-size: 16px;
+    line-height: 28px;
+    }
+
+.central-wrp > H2,
+.central-wrp > P {
+    width: 50%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+.central-wrp > H2 {
+    float: left;
+    padding-right: 20px;
+
+    border-right: 4px solid #FFF;
+    font-size: 24px;
+    line-height: 28px;
+    }
+
+.central-wrp > P {
+    float: right;
+    padding-left: 30px;
+    }
+
+.map-area > P {
+    font-size: 15px;
+    line-height: 28px;
+    }
+
+.map-area {
+    margin-top: 150px;
+    }
+
+.resources-area > P {
+    font-size: 15px;
+    line-height: 28px;
+    }
+
+.item-box {
+    margin-bottom: 15px;
+    }
+
+.item-block {
+    float: left;
+
+    width: 33.3333333%;
+    }
+
+.item-block > H3 {
+    margin: 12px 0;
+    padding: 12px 0;
+
+    background: url("../images/event-format.svg") center center no-repeat;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    }
+
+.item-block > P {
+    padding: 0 26px;
+
+    font-size: 15px;
+    line-height: 28px;
+    text-align: justify;
+    }
+
+.item-block > ul {
+    padding: 0;
+    list-style: none;
+    }
+
+.item-block > UL > LI A {
+    position: relative;
+    margin: 12px 24px;
+    padding-left: 30px;
+
+    display: block;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    }
+
+.item-block > UL > LI A::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2px;
+
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+
+    background: #00a4e4;
+    border: 4px solid #eee;
+    border-radius: 13px;
+    }
+
+.faq-area > P {
+    font-size: 15px;
+    line-height: 28px;
+    }
