@@ -40,7 +40,7 @@
     </section>
 
     <section id="event-section" class="map-area">
-        <h2>Location of Event</h2>
+        <h2>{{.LocationTitle}}</h2>
         <div class="map-container">
             <div id="map-canvas"></div>
         </div>
@@ -53,7 +53,7 @@
     </section>
 
     <section id="agenda-section" class="agenda-area">
-        <h2>AGENDA</h2>
+        <h2>{{.TitleAgenda}}</h2>
         <pre>
         10:00 Kick-off (показ приветствия от команды Dart, agenda мероприятия)
         10:30 Вступление в Dart (Валентин Шибанов)
@@ -68,13 +68,13 @@
     </section>
 
     <section class="main-area">        
-        <h2>Speakers</h2>
+        <h2>{{.TitleSpeakers}}</h2>
         <div class="main-info">
             <div class="central-wrp clearfix">
                 <img src="http://olostan.name/assets/olostan.jpg" style="float:right;width: 64px">
-                <h2>Valentyn Shybanov</h2>
+                <h2>{{.SpeakerVSName}}</h2>
                 <div><a href='http://olostan.name'>http://olostan.name</a></div>
-                <p>Більше 10 років досвіду програмування у широкому спектрі платформ як backend так і frontend. Почавши з розробки low-level компонентів (C/C++/Asm) зараз працює як регіональний директор компанії Twinfield та являється великим ентузіастом використання найновітніших технологій для Web.</p>
+                <p>{{.SpeakerVSText}}</p>
             </div>                      
         </div>
         <section class="main-area">        
