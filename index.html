@@ -11,26 +11,14 @@
 
     <header>
         <nav class="top-panel">
-            <a href="#">
-                <input id="home" name="nav-item" type="radio" checked/>
-                <label for="home">Home</label>
-            </a>
-            <a href="#">
-                <input id="event" name="nav-item" type="radio"/>
-                <label for="event">Finf an event</label>
-            </a>
-            <a href="#">
-                <input id="resources" name="nav-item" type="radio"/>
-                <label for="resources">Organizer resources</label>
-            </a>
-            <a href="#">
-                <input id="faq" name="nav-item" type="radio"/>
-                <label for="faq">Faq</label>
-            </a>
+            <a href="#home-section" class="active">Home</a>
+            <a href="#event-section">Find an event</a>
+            <a href="#resources-section"> Organizer resources </a>
+            <a href="#faq-section">Faq</a>
         </nav>
     </header>
 
-    <section class="main-area">
+    <section id="home-section" class="main-area">
         <img src="images/header.svg" width="791" height="278" alt="main-img"/>
         <div class="main-info">
             <h1>Global — February 2014</h1>
@@ -51,7 +39,7 @@
         </div>
     </section>
 
-    <section class="map-area">
+    <section id="event-section" class="map-area">
         <h2>Find an event</h2>
         <div class="map-container">
             <div id="map-canvas"></div>
@@ -62,7 +50,7 @@
         </p>
     </section>
 
-    <section class="resources-area">
+    <section id="resources-section" class="resources-area">
         <h2>ORGANIZER RESOURCES</h2>
         <p>
             More to come. See something missing?
@@ -192,7 +180,7 @@
         </div>
     </section>
 
-    <section class="faq-area">
+    <section id="faq-section" class="faq-area">
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <h3>WHAT ARE DART FLIGHT SCHOOLS?</h3>
         <p>
@@ -230,6 +218,7 @@
 
 
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
