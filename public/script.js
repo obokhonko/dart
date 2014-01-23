@@ -6,11 +6,14 @@ $(function() {
 
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
+            var hash = this.hash;
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top - 60
-                }, 1000);
+                }, 1000, 'swing', function() {
+                    window.location.hash = hash;
+                });
                 return false;
             }
         }
@@ -19,7 +22,10 @@ $(function() {
     var galaxy = document.querySelector(".galaxy-layer");
     var sky = document.querySelector(".sky-layer");
     document.addEventListener('scroll',function() {
-        var s = document.body.scrollTop || document.documentElement.scrollTop;
+        var scrolled = document.body.scrollTop || document.documentElement.scrollTop;
+        var s = scrolled;
+        if (s>1063)  s = 1063;
+        //console.log(s);
         earth.style.top=(280 + s*2)+"px";
         earth.style.webkitTransform = "scale("+1/(s/200+1)+")";
         earth.style.MozTransform = "scale("+1/(s/200+1)+")";
@@ -29,6 +35,16 @@ $(function() {
         if (s==0) s = 1;
 
         sky.style.opacity=0.8/(s/500);
+        /* TODO: Track anchor while scrooling
+        var last;
+        $('[id*=section]').each(function(i,e) {
+            if (e.offsetTop < scrolled) last = e;
+        })
+        if (last && window.location.hash != '#'+ last.id) {
+           window.location.hash = '#'+ last.id;
+           console.log(last.id);
+        }
+        */
     })
     /*
      var earth = $('.earth-layer'),
