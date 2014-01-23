@@ -154,8 +154,8 @@ SECTION {
     line-height: 28px;
     }
 
-.central-wrp > H2,
-.central-wrp > P {
+.central-wrp H2,
+.central-wrp  P {
     width: 50%;
 
     -webkit-box-sizing: border-box;
@@ -163,7 +163,7 @@ SECTION {
     box-sizing: border-box;
     }
 
-.central-wrp > H2 {
+.central-wrp H2 {
     float: left;
     padding-right: 20px;
 
@@ -172,7 +172,8 @@ SECTION {
     line-height: 28px;
     }
 
-.central-wrp > P {
+.central-wrp P {
+    width: 49%;
     float: right;
     padding-left: 30px;
     }
@@ -396,10 +397,40 @@ SECTION {
 
 .big {
     padding: 45px 10px 45px 48px;
-}
+    }
 .big SPAN {
     text-align: center;
     top: 41px;
     left: -41px;
     width: 120px;
-}
+    }
+
+.name {
+    float: left;
+    width: 50%;
+    border-right: 4px solid #FFF;
+    }
+
+.name H2 {
+    float: none;
+    width: 67%;
+    border: none;
+    }
+
+.name A {
+    float: left;
+    }
+
+.img-wrp {
+    margin: 15px 30px;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    float: right;
+
+    }
+
+.img-wrp IMG {
+    max-width: 100%;
+
+    }

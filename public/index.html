@@ -34,12 +34,12 @@
 
                     <p> {{.PromoDescr}}</p>
                 </div>
-                <p class="info-text">
-                    {{.PromoTextLong}}
-                </p>
-
-                <h1><a href="#" class="register-link">{{.Register}}</a></h1>
             </div>
+            <p class="info-text">
+                {{.PromoTextLong}}
+            </p>
+
+            <h1><a href="#" class="register-link">{{.Register}}</a></h1>
         </section>
 
         <section id="event-section" class="map-area">
@@ -97,21 +97,25 @@
 
             <div class="main-info">
                 <div class="central-wrp clearfix">
-                    <img src="http://olostan.name/assets/olostan.jpg" style="float:right;width: 64px">
-
-                    <h2>{{.SpeakerVSName}}</h2>
-
-                    <div><a href='http://olostan.name'>http://olostan.name</a></div>
+                    <div class="name clearfix">
+                        <div class="img-wrp">
+                            <img src="http://olostan.name/assets/olostan.jpg">
+                        </div>
+                        <h2>{{.SpeakerVSName}}</h2>
+                        <a href='http://olostan.name'>http://olostan.name</a>
+                    </div>
                     <p>{{.SpeakerVSText}}</p>
                 </div>
             </div>
             <div class="main-info">
                 <div class="central-wrp clearfix">
-                    <img src="http://m.c.lnkd.licdn.com/media/p/5/000/2a9/34e/171b695.jpg" style="float:right;width: 64px">
-
-                    <h2>{{.SpeakerYLName}}</h2>
-
-                    <div><a href='http://lvivski.com/'>http://lvivski.com/</a></div>
+                    <div class="name clearfix">
+                        <div class="img-wrp">
+                            <img src="http://m.c.lnkd.licdn.com/media/p/5/000/2a9/34e/171b695.jpg">
+                        </div>
+                        <h2>{{.SpeakerYLName}}</h2>
+                        <a href='http://lvivski.com/'>http://lvivski.com/</a>
+                    </div>
                     <p>{{.SpeakerYLText}}</p>
                 </div>
             </div>
@@ -143,7 +147,7 @@
         <div class="galaxy-layer">
             <img src="images/milky_way.png" width="1017" height="792" alt="galaxy"/>
         </div>
-        <div class="earth-layer">
+            <div class="earth-layer">
             <img src="images/earth.png" width="904" height="904" alt="earth"/>
         </div>
 
