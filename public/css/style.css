@@ -366,7 +366,7 @@ SECTION {
     min-height: 53px;
     color: #FFF;
     border: 1px solid rgba(4, 94, 128, 1);
-    background: rgba(0, 0, 0, 0.8) url(../images/riot.jpg) 355px 80px no-repeat fixed;;
+    background: rgba(0, 0, 0, 0.8) url(../images/riot.jpg) 355px 125px no-repeat fixed;;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 28px;
