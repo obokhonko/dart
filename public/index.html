@@ -49,9 +49,7 @@
                 <div id="map-canvas"></div>
             </div>
             <p>
-                DataArt Киеве
-                Бехтеревский переулок, 14E, 3-5-й этажи
-                04053, Киев, Украина
+                {{.Address}}
             </p>
 
         </section>
@@ -156,7 +154,7 @@
 
             var map;
             function initialize() {
-                var ll = new google.maps.LatLng(50.459294, 30.49665);
+                var ll = new google.maps.LatLng(50.423271,30.504245);
                 var mapOptions = {
                     panControl: false,
                     zoomControl: true,

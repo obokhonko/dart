@@ -4,7 +4,7 @@ TitleLocation:"Місце"
 TitleSpeakers:"Доповідачі"
 TitleAgenda:"Програма"
 TitleFAQ:"Питання"
-EventDate:"8 Лютого, 2014"
+EventDate:"15 Лютого, 2014"
 PromoText:"Вивчаєм Dart та Angular, додаємо крила до веб-розробки"
 PromoDescr:"Dart helps you build modern web apps with a new language, core libraries, and tools
     such as a package manager, editor, and a compiler to JavaScript.
@@ -43,3 +43,4 @@ AG6:"Hackathon/Workshop"
 AG7:"Демо робот"
 AG8:"Переможці"
 Register:"Реєстрація!"
+Address:"Україна, Київ, вул. Амосова 12, Ciklum, 20 поверх "
