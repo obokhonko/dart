@@ -464,6 +464,12 @@ SECTION {
 .uk {
     background: url("../images/united_kingdom_flag.png") no-repeat;
     }
-
+a[target=_blank] {
+  color: #88F;
+  display:inline-block;
+  line-height:18px; /* check your icon height */
+  background:url(../images/external_link_white.gif)  right no-repeat;
+  padding-right:15px;
+}
 
 
