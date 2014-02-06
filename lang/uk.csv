@@ -6,13 +6,13 @@ TitleAgenda:"Програма"
 TitleFAQ:"Питання"
 EventDate:"15 Лютого, 2014"
 PromoText:"Вивчаєм Dart та Angular, додаємо крила до веб-розробки"
-PromoDescr:"Dart helps you build modern web apps with a new language, core libraries, and tools
-    such as a package manager, editor, and a compiler to JavaScript.
-	Use Angular with Dart for extra jet fuel."
-PromoTextLong:"Dart hit 1.0 and is now!
-                Developer communities around the world are hosting Dart Flight School
-                events during the month of February 2014. Learn Dart and Angular
-                at your local event, or start one yourself."
+PromoDescr:"Dart допоможе вам створювати сучасні веб-додатки за допомогою нової мови програмування,
+	    основних бібліотек, а також інструментів таких як менеджер пакетів, редактор, JavaScript компілятор.
+	    Використовуйте Angular в поєднанні з Dart задля збільшення швидкості роботи ваших додатків."
+PromoTextLong:"Dart-у виповнюється 1.0!
+		Спільноти розробників по всьому світі проводять заходи Dart Flight School 
+		на протязі лютого місяця 2014року. Вивчайте Dart і Angular 
+		на вашому місцевому заході або ж розпочніть освоювати самотушки."
 LocationTitle:"Місцеположеня події"
 SpeakerVSName:"Валентин Шибанов"
 SpeakerVSText:"Більше 10 років досвіду програмування у широкому спектрі платформ як backend так і frontend. Почавши з розробки low-level компонентів (C/C++/Asm) зараз працює як регіональний директор компанії Twinfield та являється великим ентузіастом використання найновітніших технологій для Web."
@@ -20,20 +20,18 @@ SpeakerYLName:"Егор Лвівцкі"
 SpeakerYLText:"Frontend engineer, UX designer, open source guy. Author of Start: Sinatra inspired web development framework for Dart"
 FAQTitle:"Питання, які часто задають"
 Q1:"Що таке DART FLIGHT SCHOOLS?"
-A1:"Dart Flight Schools are in-person, community run events
-            to help developers learn Dart and Angular. They’ll be
-            run by local Google Developer Groups or other developer
-            meetups all over the world. Each event is a little different,
-            but generally, a Dart Flight School can include a tech talk,
-            code labs, or a hackathon."
+A1:"Dart Flight Schools це свого роду зоходи які проводяться спільнотами з метою допомогти 
+ 	розробникам вивчати Dart і Angular. Ці заходи проводитимуться місцевими Google Developer Groups
+ 	або ж іншими зібраннями розробників по всій планеті. Кожний захід несе у собі певну
+ 	відмінність, але в загальному Dart Flight School може включати в себе 
+ 	бесіду на технічну тематику, кодлаби або хакатон."
 Q2:"Should I bring laptop with myself?"
-A2:"To participate in hackathon and codelab you need to have
-            laptop with yourself. It would be gread it you also
-            download last version of <a href='https://www.dartlang.org/tools/editor/' target='_blank'>Dart Editor</a>."
-Q3:"What level of Dart knowledge is required?"
-A3:"He have plans to cover Dart from basics, so you do not need
-            to know Dart, but you need to have some knowledge of other 
-            languages, like Java, C# or JavaScript."
+A2:"Для участі у хакатоні і кодлабі вам потрібно мати із собою ноутбук. Було б 
+	чудово якби ви також встановили останню версію
+	<a href='https://www.dartlang.org/tools/editor/' target='_blank'>Dart Editor</a>."
+Q3:"Який потрібно мати рівень знань Dart?"
+A3:"У наших планах розпочати освоєння Dart із самих основ, тому знання Dart не вимагається. 
+	Однак вам потрібно мати хочаб якісь знання інших мов програмування, наприклад: Java, C# чи JavaScript."
 AG1:"Kick-off (відео від команди Dart, програма)"
 AG2:"Введеня у Dart (Валентин Шибанов)"
 AG3:"CodeLab (завантаження інструментів, створення проекта Dart)"
