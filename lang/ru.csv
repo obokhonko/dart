@@ -16,7 +16,7 @@ PromoTextLong:"Вышел Dart 1.0!
 LocationTitle:"Местонахождение ивента"
 SpeakerVSName:"Валентин Шибанов"
 SpeakerVSText:"Больше 10 лет опыта программирования в широком спектре платформ как backend так и frontend. Начав с разработки low-level компонентов (C/C++/Asm) сейчас работает как региональный директор компании Twinfield и являеться большим ентузиастом использования самых современных технологий для Web."
-SpeakerYLName:"Егор Львівський"
+SpeakerYLName:"Егор Львовский"
 SpeakerYLText:"Frontend engineer, UX дизайнер, чедлвек open source. Автор платформы Start: платформа для Dart, вдохновленная Sinatra"
 FAQTitle:"Часто задаваемые вопросы"
 Q1:"Что такое DART FLIGHT SCHOOL?"
@@ -27,9 +27,8 @@ A1:"Dart Flight School являются событиями, проводимым
             но в обычно Dart Flight School включаются tech-talk
             code labs, или hackathon."
 Q2:"Нужно ли мне брать ноутбук с собой?"
-A2:"Для того, чтоб участвовать To participate in hackathon and codelab you need to have
-            laptop with yourself. It would be gread it you also
-            download last version of <a href='https://www.dartlang.org/tools/editor/' target='_blank'>Dart Editor</a>."
+A2:"Для того, чтоб участвовать хакатоне Вам нужно взять с собой ноутбук. Кроме того,
+     было бы неплохо, если Вы проинсталлируете <a href='https://www.dartlang.org/tools/editor/' target='_blank'>Dart Editor</a>."
 Q3:"Каким уровнем знания Dart нужно обладать?"
 A3:"Мы будем начинать с самых основ Dart, так что нет необходимости знать
             Dart, но необходимо знать какой либо другой язык программирования,
