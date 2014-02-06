@@ -36,7 +36,7 @@ func handler() func(http.ResponseWriter, *http.Request) {
 	templates := template.Must(template.ParseFiles("public/index.html"))
 	langEn := readLang("en")
 	langRu := readLang("ru")
-	langUk := readLang("uk")
+	langUa := readLang("ua")
 	return func(w http.ResponseWriter, r *http.Request) {
 		var lang map[string]template.HTML
 		if r.URL.Path == "/" {
@@ -49,8 +49,8 @@ func handler() func(http.ResponseWriter, *http.Request) {
 		if r.URL.Path == "/ru" {
 			lang = langRu
 		}
-		if r.URL.Path == "/uk" {
-			lang = langUk
+		if r.URL.Path == "/ua" {
+			lang = langUa
 		}
 		if lang != nil {
 			templates.ExecuteTemplate(w, "index.html", lang)
