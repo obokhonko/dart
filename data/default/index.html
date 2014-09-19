@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Thing">
+    <head>
+        <meta charset="utf-8">
+        <title>{{.PageTitle}}</title>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" href="../images/favicon.ico">
+
+        <meta itemprop="description" content="Dart Flight School in Ukraine, Kyiv is event, part of a series of global events to help developers learn Dart and Angular.">
+        <meta itemprop="image" content="images/header.svg">
+        <link href="https://plus.google.com/+ValentynShybanov" rel="publisher">
+    </head>
+    <body>
+        <header>
+            <nav class="top-panel">
+                <a href="#home-section" class="active">{{.TitleAbout}}</a>
+                <a href="#event-section">{{.TitleLocation}}</a>
+                <a href="#speakers-section">{{.TitleSpeakers}}</a>
+                <a href="#agenda-section">{{.TitleAgenda}}</a>
+                <a href="#faq-section">{{.TitleFAQ}}</a>
+            </nav>
+            <div class="language-select">
+                <a href="ua" class="ua">Український</a>
+                <a href="ru" class="ru">Русский</a>
+                <a href="en" class="en">English</a>
+            </div>
+        </header>
+
+        <section id="home-section" class="main-area">
+            <img src="images/header.svg" width="791" height="278" alt="main-img"/>
+
+            <div class="main-info">
+                <h1>{{.EventDate}}</h1>
+
+                <div class="central-wrp clearfix">
+                    <h2>{{.PromoText}}</h2>
+
+                    <p> {{.PromoDescr}}</p>
+                </div>
+            </div>
+            <p class="info-text">
+                {{.PromoTextLong}}
+            </p>
+
+            <h1><a href="#" class="register-link">{{.Register}}</a></h1>
+        </section>
+
+        <section id="event-section" class="map-area">
+            <h2>{{.LocationTitle}}</h2>
+
+            <div class="map-container">
+                <div id="map-canvas"></div>
+            </div>
+            <p>
+                {{.Address}}
+            </p>
+
+        </section>
+
+        <section id="agenda-section" class="agenda-area">
+            <h2>{{.TitleAgenda}}</h2>
+                <p class="agenda-item">
+                    <span>10:00</span>{{.AG1}}
+                </p>
+
+                <p class="agenda-item">
+                    <span>10:30</span>{{.AG2}}
+                </p>
+
+                <p class="agenda-item big">
+                    <span>11:00 (11:30)</span>{{.AG3}}
+                </p>
+
+                <p class="agenda-item">
+                    <span>12:00</span>{{.AG4}}
+                </p>
+
+                <p class="agenda-item big">
+                    <span>13:00 (13:30)</span>{{.AG5}}
+                </p>
+
+                <p class="agenda-item">
+                    <span>14:00</span>{{.AG6}}
+                </p>
+
+                <p class="agenda-item big">
+                    <span>18:00 (19:00)</span>{{.AG7}}
+                </p>
+
+                <p class="agenda-item">
+                    <span>20:00</span>{{.AG8}}
+                </p>
+
+        </section>
+
+        <section id="speakers-section">
+            <h2>{{.TitleSpeakers}}</h2>
+
+            <div class="main-info">
+                <div class="central-wrp clearfix">
+                    <div class="name clearfix">
+                        <div class="img-wrp">
+                            <img src="http://olostan.name/assets/olostan.jpg">
+                        </div>
+                        <h2>{{.SpeakerVSName}}</h2>
+                        <a href='http://olostan.name'>http://olostan.name</a>
+                    </div>
+                    <p>{{.SpeakerVSText}}</p>
+                </div>
+            </div>
+            <div class="main-info">
+                <div class="central-wrp clearfix">
+                    <div class="name clearfix">
+                        <div class="img-wrp">
+                            <img src="http://m.c.lnkd.licdn.com/media/p/5/000/2a9/34e/171b695.jpg">
+                        </div>
+                        <h2>{{.SpeakerYLName}}</h2>
+                        <a href='http://lvivski.com/'>http://lvivski.com/</a>
+                    </div>
+                    <p>{{.SpeakerYLText}}</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-section" class="faq-area">
+            <h2>{{.FAQTitle}}</h2>
+
+            <h3>{{.Q1}}</h3>
+
+            <p>
+                {{.A1}}</p>
+
+            <h3>{{.Q2}}</h3>
+
+            <p>
+                {{.A2}}
+            </p>
+
+            <h3>{{.Q3}}</h3>
+
+            <p>
+                {{.A3}}
+            </p>
+        </section>
+
+        <div class="sky-layer"></div>
+        <div class="stars-layer"></div>
+        <div class="galaxy-layer">
+            <img src="images/milky_way.png" width="1017" height="792" alt="galaxy"/>
+        </div>
+            <div class="earth-layer">
+            <img src="images/earth.png" width="904" height="904" alt="earth"/>
+        </div>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+        <script type="text/javascript">
+
+            var map;
+            function initialize() {
+                var ll = new google.maps.LatLng(50.423271,30.504245);
+                var mapOptions = {
+                    panControl: false,
+                    zoomControl: true,
+                    scaleControl: false,
+                    zoom: 15,
+                    center: ll,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    center: ll
+                };
+                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: ll,
+                    map: map,
+                });
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+
+        </script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 package serve
 
 import (
-	//    "fmt"
+	"fmt"
 	"encoding/csv"
 	"html/template"
 	"io"
@@ -9,9 +9,8 @@ import (
 	"os"
 	"strings"
 )
-
-func readLang(file string) map[string]template.HTML {
-	inFile, err := os.Open("lang/" + file + ".csv")
+func readLang(folder,file string) map[string]template.HTML {
+	inFile, err := os.Open("data/"+folder+"/lang/" + file + ".csv")
 	defer inFile.Close()
 	if err != nil {
 		panic(err)
@@ -31,25 +30,26 @@ func readLang(file string) map[string]template.HTML {
 	}
 	return m
 }
-func handler() func(http.ResponseWriter, *http.Request) {
+func handler(folder string) func(http.ResponseWriter, *http.Request) {
 	handler := http.FileServer(http.Dir("public"))
-	templates := template.Must(template.ParseFiles("public/index.html"))
-	langEn := readLang("en")
-	langRu := readLang("ru")
-	langUa := readLang("ua")
+	templates := template.Must(template.ParseFiles("data/"+folder+"/index.html"))
+	langEn := readLang(folder,"en")
+	langRu := readLang(folder,"ru")
+	langUa := readLang(folder,"ua")
 	return func(w http.ResponseWriter, r *http.Request) {
 		var lang map[string]template.HTML
-		if r.URL.Path == "/" {
+		fmt.Println("asdsa")
+		if strings.HasSuffix(r.URL.Path,"/") {
 			// todo: detect lang
 			lang = langEn
 		}
-		if r.URL.Path == "/en" {
+		if strings.HasSuffix(r.URL.Path,"/en") {
 			lang = langEn
 		}
-		if r.URL.Path == "/ru" {
+		if strings.HasSuffix(r.URL.Path,"/ru") {
 			lang = langRu
 		}
-		if r.URL.Path == "/ua" {
+		if strings.HasSuffix(r.URL.Path,"/ua") {
 			lang = langUa
 		}
 		if lang != nil {
@@ -63,6 +63,8 @@ func handler() func(http.ResponseWriter, *http.Request) {
 	}
 }
 
-func init() {
-	http.HandleFunc("/", handler())
+func init() {	
+	http.HandleFunc("/1", handler("1"))
+	http.HandleFunc("/", handler("default"))
+
 }
