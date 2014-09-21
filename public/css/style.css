@@ -472,4 +472,24 @@ a[target=_blank] {
   padding-right:15px;
 }
 
+#header-badge {
+    background: url(../images/wax.png) no-repeat;
+    width: 240px;
+    height:220px;
+    display:inline-block;
+    position: absolute;
+    left:600px;
+    top: 200px;
+    font-size: 80px;
+    color: rgba(230,200,0,0.7);
+    padding-left: 105px;
+    padding-top: 60px;
+    text-shadow: 0 0 15px white;
+}
 
+.agenda-area.ato .agenda-item {
+    background: rgba(0, 0, 0, 0.9) url(../images/ato.jpg) no-repeat fixed;
+    background-size: 1200px 100%;
+    background-position: 0px 35px;
+
+}

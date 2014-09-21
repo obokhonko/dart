@@ -1,7 +1,6 @@
 package serve
 
 import (
-	"fmt"
 	"encoding/csv"
 	"html/template"
 	"io"
@@ -9,7 +8,9 @@ import (
 	"os"
 	"strings"
 )
-func readLang(folder,file string) map[string]template.HTML {
+type translations map[string]template.HTML;
+
+func readLang(folder,file string) translations {
 	inFile, err := os.Open("data/"+folder+"/lang/" + file + ".csv")
 	defer inFile.Close()
 	if err != nil {
@@ -17,7 +18,7 @@ func readLang(folder,file string) map[string]template.HTML {
 	}
 	reader := csv.NewReader(inFile)
 	reader.Comma = ':'
-	m := make(map[string]template.HTML)
+	m := make(translations)
 	for {
 		record, err := reader.Read()
 		if err == io.EOF {
@@ -30,15 +31,26 @@ func readLang(folder,file string) map[string]template.HTML {
 	}
 	return m
 }
-func handler(folder string) func(http.ResponseWriter, *http.Request) {
-	handler := http.FileServer(http.Dir("public"))
-	templates := template.Must(template.ParseFiles("data/"+folder+"/index.html"))
+func loadTranslations(folder string) (translations,translations,translations) {
 	langEn := readLang(folder,"en")
 	langRu := readLang(folder,"ru")
 	langUa := readLang(folder,"ua")
+	return langEn,langRu,langUa
+}
+
+func handler(folder string) func(http.ResponseWriter, *http.Request) {
+	handler := http.FileServer(http.Dir("public"))
+	templates := template.Must(template.ParseFiles("data/"+folder+"/index.html"))
+	/*
+	langEn := readLang(folder,"en")
+	langRu := readLang(folder,"ru")
+	langUa := readLang(folder,"ua")
+	*/
+	langEn, langRu, langUa := loadTranslations(folder)
+
 	return func(w http.ResponseWriter, r *http.Request) {
 		var lang map[string]template.HTML
-		fmt.Println("asdsa")
+		langEn, langRu, langUa = loadTranslations(folder)
 		if strings.HasSuffix(r.URL.Path,"/") {
 			// todo: detect lang
 			lang = langEn
@@ -64,7 +76,7 @@ func handler(folder string) func(http.ResponseWriter, *http.Request) {
 }
 
 func init() {	
-	http.HandleFunc("/1", handler("1"))
+	http.HandleFunc("/1/", handler("1"))
 	http.HandleFunc("/", handler("default"))
 
 }

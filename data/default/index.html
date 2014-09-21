@@ -30,6 +30,7 @@
 
         <section id="home-section" class="main-area">
             <img src="images/header.svg" width="791" height="278" alt="main-img"/>
+            <span id="header-badge">2</span>
 
             <div class="main-info">
                 <h1>{{.EventDate}}</h1>
@@ -59,7 +60,7 @@
 
         </section>
 
-        <section id="agenda-section" class="agenda-area">
+        <section id="agenda-section" class="agenda-area ato">
             <h2>{{.TitleAgenda}}</h2>
                 <p class="agenda-item">
                     <span>10:00</span>{{.AG1}}
@@ -69,28 +70,24 @@
                     <span>10:30</span>{{.AG2}}
                 </p>
 
-                <p class="agenda-item big">
-                    <span>11:00 (11:30)</span>{{.AG3}}
+                <p class="agenda-item">
+                    <span>11:00</span>{{.AG3}}
                 </p>
 
                 <p class="agenda-item">
                     <span>12:00</span>{{.AG4}}
                 </p>
 
-                <p class="agenda-item big">
-                    <span>13:00 (13:30)</span>{{.AG5}}
+                <p class="agenda-item">
+                    <span>13:00</span>{{.AG5}}
                 </p>
 
                 <p class="agenda-item">
                     <span>14:00</span>{{.AG6}}
                 </p>
 
-                <p class="agenda-item big">
-                    <span>18:00 (19:00)</span>{{.AG7}}
-                </p>
-
                 <p class="agenda-item">
-                    <span>20:00</span>{{.AG8}}
+                    <span>18:00</span>{{.AG7}}
                 </p>
 
         </section>
@@ -110,18 +107,7 @@
                     <p>{{.SpeakerVSText}}</p>
                 </div>
             </div>
-            <div class="main-info">
-                <div class="central-wrp clearfix">
-                    <div class="name clearfix">
-                        <div class="img-wrp">
-                            <img src="http://m.c.lnkd.licdn.com/media/p/5/000/2a9/34e/171b695.jpg">
-                        </div>
-                        <h2>{{.SpeakerYLName}}</h2>
-                        <a href='http://lvivski.com/'>http://lvivski.com/</a>
-                    </div>
-                    <p>{{.SpeakerYLText}}</p>
-                </div>
-            </div>
+
         </section>
 
         <section id="faq-section" class="faq-area">

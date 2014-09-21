@@ -1,23 +1,18 @@
-PageTitle:"Dart Flight School - Learning Dart"
+PageTitle:"Dart Flight School 2 - Flying with Dart"
 TitleAbout:"About"
 TitleSpeakers:"Speakers"
 TitleAgenda:"Agenda"
 TitleLocation:"Location"
 TitleFAQ:"FAQ"
-EventDate:"15 February, 2014"
-PromoText:"Learn Dart  and Angular, get your web development wings"
-PromoDescr:"Dart helps you build modern web apps with a new language, core libraries, and tools
-    such as a package manager, editor, and a compiler to JavaScript.
-	Use Angular with Dart for extra jet fuel."
-PromoTextLong:"Dart hit 1.0 and is now!
-                Developer communities around the world are hosting Dart Flight School
-                events during the month of February 2014. Learn Dart and Angular
-                at your local event, or start one yourself."
+EventDate:"11 October, 2014"
+PromoText:"Fly with Dart and Angular, don't loose the wind"
+PromoDescr:"After first 'Dart Flight School' Dart platform improved greatly. New features, components, packages were added, that will help to develop great web apps!"
+PromoTextLong:"After fist release Dart got 1.6 version. We'll continue set of events
+                called 'Dart Flight School' where attendees can learn Dart, explore new
+                features or just share their thoughts about platform."
 LocationTitle:"Location of Event"
 SpeakerVSName:"Valentyn Shybanov"
 SpeakerVSText:"More then 10 years of software development in wide spread of platform as backend and as frontend. Started with development of low-level components (C/C++/Asm) now is is working as regional lead of Twinfield and is a big enthusiast of using mordern technologies for Web."
-SpeakerYLName:"Yehor Lvivski"
-SpeakerYLText:"Frontend engineer, UX designer, open source guy. Author of Start: Sinatra inspired web development framework for Dart"
 FAQTitle:"FREQUENTLY ASKED QUESTIONS"
 Q1:"WHAT ARE DART FLIGHT SCHOOLS?"
 A1:"Dart Flight Schools are in-person, community run events
@@ -34,13 +29,12 @@ Q3:"What level of Dart knowledge is required?"
 A3:"We have plans to cover Dart from basics, so you do not need
             to know Dart, but you need to have some knowledge of other 
             languages, like Java, C# or JavaScript."
-AG1:"Kick-off (video from Dart team, agenda of the event)"
-AG2:"Introduction into Dart (Valentyn Shybanov)"
-AG3:"CodeLab (tools download, creating Dart project)"
-AG4:"Tech-talk (Yehor Lvivski)"
-AG5:"Break"
-AG6:"Hackathon/Workshop"
-AG7:"Demos"
-AG8:"Winners"
+AG1:"Kick-off"
+AG2:"Introduction into Dart for newcomers"
+AG3:"Dart from 1.0 to 1.6"
+AG4:"Break"
+AG5:"CodeLab (tools download, creating Dart project)"
+AG6:"Small quiz and Demos of Dart projects"
+AG7:"Closing"
 Register:"Register Now!"
 Address:"12 Amosova St. 03680, Kyiv, Ukraine, Ciklum, 20th flour"
