@@ -5,30 +5,24 @@ TitleAgenda:"Agenda"
 TitleLocation:"Location"
 TitleFAQ:"FAQ"
 EventDate:"12 October, 2014"
-PromoText:"Fly with Dart and Angular, don't loose the wind"
-PromoDescr:"After first 'Dart Flight School' Dart platform improved greatly. New features, components, packages were added, that will help to develop great web apps!"
-PromoTextLong:"After fist release Dart got 1.6 version. We'll continue set of events
-                called 'Dart Flight School' where attendees can learn Dart, explore new
-                features or just share their thoughts about platform."
-LocationTitle:"Location of Event"
+PromoText:"Fly with Dart and Angular, don't lose the wind"
+
+PromoDescr:"Since the first 'Dart Flight School' Dart platform was improved substantially. Have been added new features, components, packages, and it will greatly assist in the development of new web-applications!"
+
+PromoTextLong:"After the first release, Dart grew up to version 1.6. We continue our series of events called 'Dart Flight School' where attendees can learn the Dart, explore new features or just share their thoughts about the platform."
+
+LocationTitle:"Event Location"
 SpeakerVSName:"Valentyn Shybanov"
-SpeakerVSText:"More then 10 years of software development in wide spread of platform as backend and as frontend. Started with development of low-level components (C/C++/Asm) now is is working as regional lead of Twinfield and is a big enthusiast of using mordern technologies for Web."
+SpeakerVSText:"More than 10 years of programming experience in a wide range of platforms, both backend and frontend. Started from the development of low-level components (C / C ++ / Asm), now working as a regional director of Twinfield and being a big enthusiast of the use of the most advanced technologies for the Web."
 FAQTitle:"FREQUENTLY ASKED QUESTIONS"
-Q1:"WHAT ARE DART FLIGHT SCHOOLS?"
-A1:"Dart Flight Schools are in-person, community run events
-            to help developers learn Dart and Angular. They’ll be
-            run by local Google Developer Groups or other developer
-            meetups all over the world. Each event is a little different,
-            but generally, a Dart Flight School can include a tech talk,
-            code labs, or a hackathon."
-Q2:"Should I bring laptop with myself?"
-A2:"To participate in hackathon and codelab you need to have
-            laptop with yourself. It would be great it you also
-            download last version of <a href='https://www.dartlang.org/tools/editor/' target='_blank'>Dart Editor</a>."
+Q1:"WHAT IS 'DART FLIGHT SCHOOL'?"
+A1:"'Dart Flight Schools' is a series of events dedicated to to learn Dart and Angular. They will be carried out by local Google Developer Groups or other communities of developers around the world. Events will be different from each other, but usually Dart Flight School included tech-talk code laboratory or Hackathon."
+Q2:"Should I bring a laptop?"
+A2:"Yes, to participate hackathon and codelab you need to bring your
+            laptop. Furthermore, it would be nice to install the last version of <a href='https://www.dartlang.org/tools/editor/' target='_blank'>Dart Editor</a>."
 Q3:"What level of Dart knowledge is required?"
 A3:"We have plans to cover Dart from basics, so you do not need
-            to know Dart, but you need to have some knowledge of other 
-            languages, like Java, C# or JavaScript."
+            to know Dart, but you need to know any other programming language, like Java, C# or JavaScript."
 AG1:"Kick-off"
 AG2:"Introduction into Dart for newcomers"
 AG3:"Dart from 1.0 to 1.6"
