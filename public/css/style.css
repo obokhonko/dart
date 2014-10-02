@@ -451,6 +451,8 @@ SECTION {
     background-size: contain;
     cursor: pointer;
     text-indent: -1000px;
+    
+    color: transparent;
     }
 
 .ua {
