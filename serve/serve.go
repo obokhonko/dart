@@ -50,6 +50,7 @@ func handler(folder string) func(http.ResponseWriter, *http.Request) {
 
 	return func(w http.ResponseWriter, r *http.Request) {
 		var lang map[string]template.HTML
+//
 		langEn, langRu, langUa = loadTranslations(folder)
 		if strings.HasSuffix(r.URL.Path,"/") {
 			// todo: detect lang
